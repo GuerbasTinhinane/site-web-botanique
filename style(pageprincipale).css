@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
+
+
+/*GENERAL*/
+*
+{box-sizing:border-box;
+margin:0;
+padding:0;
+}
+html{
+scroll-behavior: smooth ;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+li{
+ list-style-type: none;
+}
+h1,h2,h3,h4,h5
+{
+font-family:'Abril FatFace';
+}
+p{font-family: 'Montserrat';
+font-weight: 400;}
+/*h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 2em;
+}
+h6{
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 1em;
+}
+*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    position: fixed;
+    z-index: 10;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+/***************NAVBAR**********************/
+nav {
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 0;
+    font-family: 'Advent Pro', sans-serif;
+}
+nav a{
+    width: 100%;
+    display: none;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;   
+    text-align: center;
+}
+header li{
+    float: right;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px; 
+}
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+    margin-left: 40px;
+}
+
+
+/***************IMAGE ACCEUIL**********************/
+.main-image{
+
+    align-items: center;
+    background: url('media/alonso-reyes-544DkFtompA-unsplash.jpg')center no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-attachment:fixed;
+    padding-top: 60px;
+    height: 799px;
+  }
+  .container {
+    border-radius: 10px;
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.9), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    height: 420px;
+    max-width: 758px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .img2{
+    background: url('media/alonso-reyes-544DkFtompA-unsplash.jpg') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: -100%;
+    width: 100%;
+    background-attachment:fixed;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+.img2 i {
+margin-top: 20px;
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+}
+.img2 h1{
+    font-family: 'Dancing Script', cursive;
+    color: antiquewhite;
+    font-size: 7em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+    padding: 0 ;
+}
+.img2 h3{
+font-size: 30px;
+padding-top: 30px;
+text-shadow: 1px 3px 2px black;
+}
+#premierTrait{
+    height: 1px;
+    width: 60%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: black;
+}
+h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1em;
+}
+
+/***************PRESENTATION**********************/
+#presentation {
+margin: 30px ;
+}
+.botanique h2{
+font-size: 50px; 
+font-family: 'Abril Fatface'; 
+font-weight: 100;
+position: relative;
+margin-bottom: 30px;
+padding-bottom: 10px;
+border-bottom: 1px solid greenyellow;
+max-width: 750px;
+margin-top: 30px;
+}
+
+#textIntro{
+    padding: 0px 20px;
+}
+.button1{
+margin-top:15px;
+text-align: center;
+border-radius: 15px;
+width:200px;
+padding:10px;
+border: 5px solid #fff;
+background-color: #030303;
+}
+.button1:hover{
+transform:scale(1.1) ;
+opacity:0.92;
+
+}
+.botanique a {
+font-size:15px;
+color:#fff;
+font-weight:600;
+font-family: 'montserrat';
+}
+
+.espece{
+margin-top: 50px;
+}
+.espece h2{
+        font-size: 50px; 
+        font-family: 'Abril Fatface'; 
+        font-weight: 100;
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid greenyellow;
+        max-width: 850px;
+        }
+/*images*/
+.containerimg{
+    background-color: rgb(41, 46, 57);
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    max-width: 400px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .containerimg img {
+    vertical-align: top;
+    width: 100%;
+    backface-visibility: hidden;
+    height: 100%;
+  }
+  
+  .containerimg h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .containerimg:hover > img,
+  .containerimg.hover > img {
+    opacity: 0.5;
+  }
+  
+  .containerimg figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+ 
+  }
+  
+  
+  .containerimg:hover figcaption,
+  .containerimg.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.1 5s;
+  }
+  
+.grille{
+max-width: 100%;
+display:grid;
+grid-template-rows: repeat(2,minmax(200px,300px))repeat(2,minmax(100px,150px))minmax(100px,200px);
+grid-template-columns:repeat(4,minmax(200px,300px)) ;
+gap:15px;
+}
+
+.lila{
+grid-row: 1/3;
+grid-column: 1/2;
+}
+.baobab{
+    grid-row: 5/6;
+    grid-column:1/2;
+}
+.trefle{
+    grid-row:5/6;
+    grid-column: 4/5;
+    }
+.guzmania{
+grid-row:2/5;
+grid-column:4/5;
+}
+.tacca{
+grid-row:2/3;
+grid-column: 3/4;
+}
+.cactus{
+grid-column:3/4;
+grid-row: 3/5;
+}
+.strelitzia{
+grid-row:3/5;
+grid-column:2/3;
+}
+.lavande{
+grid-row: 3/5;
+grid-column:1/2;
+}
+/* --------CONTACT-------------*/
+.contact{
+margin-top: 50px;
+}
+.contact h3{
+text-align: center;
+font-size: 40px;
+animation: couleur 800ms alternate infinite;
+}
+.contact h4{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    animation: couleur2 800ms alternate infinite;
+
+    }
+
+@keyframes couleur{
+0%{color:#fff;}
+30%{color:#fff}
+100% {color:black; }
+
+}
+@keyframes couleur2{
+    0%{color:black;}
+    30%{color:black;}
+    100%{color:#fff;}
+    }
+#traittrois{
+        height: 1px;
+        width: 40%;
+        margin: -3px auto;
+        background-color:greenyellow;
+        box-shadow: black;
+    }
+form{
+    display:grid;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 750px;
+    font-family: 'Montserrat';
+}
+input, textarea, button{
+    border: none;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family:serif;
+    border-bottom: 1px solid rgb(153, 153, 153);
+
+}
+textarea{
+    height: 120px;
+}
+
+.appuyer{
+    margin-top: 15px;
+    font-size: 1.5em;
+    background: rgb(72, 133, 125);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .button2 {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: rgb(105, 168, 160);;
+    color: white;
+    transform: translateY(-6px);
+    font-family: 'Montserrat';
+  }
+
+  .appuyer:active .button2 {
+    transform: translateY(-2px);
+  }
+
+
+/***************FOOTER**********************/
+footer{
+    height: 300px;
+    background-color:rgb(105, 168, 160);
+    color: #FFFAE1;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-top:50px;
+}
+footer h3{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-align: center;
+    padding-top:20px;
+    color:#fff;
+    font-size:80px;
+}
+
+#deuxiemeTrait{
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 50px auto 40px auto;
+}
+#copyrightEtIcons{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright{
+    width:100%;
+    text-align: center;
+    color:#FFFAE1;
+    font-size: 15px;
+    font-family: 'Montserrat';
+}
+#icons{
+    width: 50%;
+    text-align: right;
+    color:black;
+}
+#icons a{ 
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 2em;
+    color: #030303;
+}
+#icons a:hover{ 
+    transform: scale(1.5);
+    transition: 0.1s;
+}

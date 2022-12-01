@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Botanic garden</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <link rel="icon" type="image/png"  href="media/arbre.PNG">
+
+    </head>
+    <body>
+        <div class="logo"><a href="#"><img src="media/favicon-32x32.png" alt=""></a></div>
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo"> <a href="#">Botanic garden</a> </li>
+                    <li> <a href="#">Langue</a> </li>
+                    <li> <a href="#">Je sais pas</a> </li>
+                    <li> <a href="#">Nous contacter</a> </li>
+                </ul>
+            </nav>
+            <div id="imageAcceuil">
+                <!-- <div class="hero video">
+                <video id="video" autoplay="" loop="" muted="">
+                <source src="https://player.vimeo.com/external/329171344.hd.mp4?s=2c8c8bac484f86d824ae543a400b87b77db257cf&amp;profile_id=175" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h1>Botanic garden</h1>
+                <div id="premierTrait"></div>
+                <h3>Exclusive plants unique by their shapes and forms!</h3>
+                </div> -->
+                
+                <h1>Botanic garden</h1>
+                <div id="premierTrait"></div>
+                <h3>Exclusive plants unique by their shapes and forms!</h3>
+            </div>
+
+
+        </header>
+        <section id="presentation">
+            <div id="textIntro">
+                <h2>La jardinerie naturelle</h2>
+                <center>
+                    La botanique est d'une importance capitale pour la vie sur la Terre puisque les végétaux sont à la base de la chaîne alimentaire et des écosystèmes. En effet, en tant que producteurs primaires, ce sont eux qui captent l'énergie du soleil et qui la transforment en énergie assimilable par les autres organismes vivants.
+
+                </center>
+            </div>
+            <div id="image">
+                <div class="imagee">
+                    <h4>Nous trouver</h4>
+                    <a href="#"> <img src="media/carte.jpg" alt="imageAcceuil"> </a>
+                </div>
+                
+            </div>
+        </section>  
+        <section id="explorer">
+            <h2>Et tant à découvrir...</h2>
+            
+                <div class="slider">
+                   <div class="slides">
+                       <input type="radio" name="r" id="r1" >
+                       <input type="radio" name="r" id="r2">
+                       <input type="radio" name="r" id="r3">
+                       <input type="radio" name="r" id="r4">
+                       <input type="radio" name="r" id="r5">
+                       <div class="slide first">
+                           <img src="media/11.png" alt="">
+                           <div class="slide-text first">
+                            <h5>Clerodendrum paniculatum, </h5>
+                            <p>Une espèce d’arbustes de la famille des Verbenaceae ou des Lamiaceae (en classification phylogénétique) originaire d’Asie du Sud Est.</p>
+                        </div>
+                       </div>
+                       <div class="slide">
+                           <img src="media/12.png" alt="">
+                           <div class="slide-text">
+                            <h5>La rose de porcelaine (Etlingera elatior), </h5>
+                            <p>Une espèce appartenant au genre Etlingera de la famille des Zingiberaceae, originaire de Malaisie.</p>
+                        </div>
+                       </div>
+                       <div class="slide">
+                           <img src="media/13.png" alt="">
+                           <div class="slide-text">
+                            <h5>Rose de Chine, Hibiscus rose de Chine, Chinesischer Roseneibisch,</h5>
+                            <p>C’est une espèce de plantes à fleurs de la famille des Malvaceae.
+                                Il est souvent utilisé comme symbole des îles Hawaii dont il est la fleur nationale ainsi que celle de la Malaisie Parc florale Thaïlande.
+                            </p>
+                        </div>
+                       </div>
+                       <div class="slide">
+                           <img src="media/14.png" alt="">
+                           <div class="slide-text">
+                            <h5>Dendrobium : </h5>
+                            <p>Ce genre est originaire des régions sub-tropicales et tropicales d’Asie, d’Australie et de Nouvelle-Zélande. On en dénombre 1220 espèces : c’est le deuxième genre d’orchidées le plus important en nombre d’espèces,</p>
+                        </div>
+                       </div>
+                       <div class="slide">
+                           <img src="media/15.jpg" alt="">
+                           <div class="slide-text">
+                            <h5>Le genre Spathoglottis </h5>
+                            <p>Il compte 48 espèces d’Orchidaceae terrestres d’Asie du Sud-Est. THAÏLANDE 2011.</p>
+                        </div>
+                       </div>
+                   </div>
+                   <div class="navigation">
+                       <label for="r1" class="btn"></label>
+                       <label for="r2" class="btn"></label>
+                       <label for="r3" class="btn"></label>
+                       <label for="r4" class="btn"></label>
+                       <label for="r5" class="btn"></label>
+                   </div>
+                   <div class="navigation-auto">
+                       <div class="auto-btn1"></div>
+                       <div class="auto-btn2"></div>
+                       <div class="auto-btn3"></div>
+                       <div class="auto-btn4"></div>
+                       <div class="auto-btn5"></div>
+                   </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('r' + counter).checked = true;
+                    counter++;
+                    if(counter > 5){
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>  
+
+        </section>
+        <footer>
+            <h6>Des questions?</h6>
+            <h2>Contactez-nous</h2>
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="E-mail">
+                <textarea placeholder="Votre message ici..."></textarea>
+                <button>Envoyez</button>
+            </form>
+            <div id="deuxiemeTrait"></div>            
+            <div id="copyrightEtIcons">
+                <div id="copyright">
+                    <span>© from Guerbas and Yahiaoui| 2022</span>
+                </div>
+                <div id="icons">
+                    <a href="http://www.twitter.fr">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="http://www.facebook.fr">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="http://www.instagram.com">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>            
+
+        </footer>
+    </body>
+</html>
